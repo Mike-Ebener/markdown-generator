@@ -4,31 +4,45 @@
     module.exports = templateData => {
         // destructure page data by section
         const { title, description, contents, installation, usage, 
-              credits, license, badges, features, contributing, tests } = templateData;
+              credits, license, badges, features, contributing, tests, github, email } = templateData;
  
  return `
-# Your Project Title: ${title}
+# Readme Title: 
+${title}
 
-## Description: ${description}
+## Description: 
+${description}
 
-## Table of Contents (Optional): ${contents}
+## Table of Contents (Optional): 
+${contents}
 
-## Installation: ${installation}
+## Installation: 
+${installation}
 
-## Usage: ${usage}
+## Usage: 
+${usage}
 
-## Credits: ${credits}
+## Credits: 
+${credits}
 
-## License: ${license}
+## License: 
+${license}
 
-## Badges: ${badges}
+## Badges: 
+${badges}
 
-## Features: ${features}
+## Features: 
+${features}
 
-## Contributing: ${contributing}
+## Contributing: 
+${contributing}
 
-## Tests: ${tests}
+## Tests: 
+${tests}
 
+## Questions?
+Checkout my GitHub profile here: https://github.com/${github}
+If you have any questions kindly reach out to me at ${email}
 
     `;
   };
