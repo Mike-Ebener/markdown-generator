@@ -109,8 +109,23 @@ return inquirer.prompt([
         message: 'Provide examples about tests and how to to run them:'
       },
     ])
+    .then(portfolioData => {
+        console.log(portfolioData);
+        return portfolioData;
+        //projectData.push(portfolioData);
+      });
 };
-    promptUser().then(answers => console.log(answers));
+    promptUser()
+      //.then(portfolioData => {
+       // console.log(portfolioData);
+        // will be uncommented in lesson 4
+        // const pageHTML = generatePage(portfolioData);
+        // fs.writeFile('./index.html', pageHTML, err => {
+        //   if (err) throw new Error(err);
+        //   console.log('Page created! Check out index.html in this directory to see it!');
+        // });
+    //  });
+    
     
     /*.then(projectData => {
        portfolioData.push(projectData);
@@ -131,4 +146,3 @@ return inquirer.prompt([
 
 // Function call to initialize app
 //init(promptProject);
-
