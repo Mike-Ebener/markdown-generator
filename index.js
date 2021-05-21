@@ -3,7 +3,7 @@
 
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
-const generateMarkdown = require('./utils/generateMarkdown');
+const generateMarkdown = require('./src/page-template');
 const fs = require('fs');
 
 // TODO: Create an array of questions for user input
@@ -116,15 +116,15 @@ return inquirer.prompt([
       });
 };
     promptUser()
-      //.then(portfolioData => {
-       // console.log(portfolioData);
-        // will be uncommented in lesson 4
-        // const pageHTML = generatePage(portfolioData);
-        // fs.writeFile('./index.html', pageHTML, err => {
-        //   if (err) throw new Error(err);
-        //   console.log('Page created! Check out index.html in this directory to see it!');
-        // });
-    //  });
+      .then(portfolioData => {
+       console.log(portfolioData);
+       
+        const pageMD = generateMarkdown(portfolioData);
+        fs.writeFile('./dist/README.md', pageMD, err => {
+          if (err) throw new Error(err);
+         console.log('Page created! Check out README.md in the dist directory to see it!');
+        });
+    });
     
     
     /*.then(projectData => {
