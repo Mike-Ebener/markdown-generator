@@ -108,6 +108,16 @@ return inquirer.prompt([
         name: 'tests',
         message: 'Provide examples about tests and how to to run them:'
       },
+      {
+        type: 'input',
+        name: 'github',
+        message: 'Provide your GitHub user ID'
+      },
+      {
+        type: 'input',
+        name: 'email',
+        message: 'Provide your email:'
+      },
     ])
     .then(portfolioData => {
         console.log(portfolioData);
