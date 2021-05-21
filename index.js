@@ -1,38 +1,11 @@
 
 
-
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const generateMarkdown = require('./src/page-template');
 const fs = require('fs');
 
-// TODO: Create an array of questions for user input
-//const questions = [];
 
-/*inquirer
-  .prompt([
-    {
-      type: 'input',
-      name: 'name',
-      message: 'What is your name?'
-    }
-  ])
-  .then(answers => console.log(answers));
-
-const promptProject = portfolioData => {
-    console.log(`
-  =================
-  Add a New Readme
-  =================
-  `);*/
-  
-    // If there's no 'projects' array property, create one
-   // if (!portfolioData.projects) {
-    //  portfolioData.projects = [];
-   // }
-//end added code
-   
-//const promptUser = () => 
 const promptUser = portfolioData =>
 {
     
@@ -137,22 +110,4 @@ return inquirer.prompt([
     });
     
     
-    /*.then(projectData => {
-       portfolioData.push(projectData);
-        if (projectData.confirmAddProject) {
-          return promptProject(portfolioData);
-        } else {
-          return portfolioData;
-        }
-      });
-      console.log(portfolioData) */
   
-
-// TODO: Create a function to write README file
-//function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-//function init() {}
-
-// Function call to initialize app
-//init(promptProject);

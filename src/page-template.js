@@ -1,14 +1,11 @@
-//module.exports = (title, description, contents, installation, usage, 
- //   credits, license, badges, features, contributing, tests) => {
-   
+
     module.exports = templateData => {
         // destructure page data by section
         const { title, description, contents, installation, usage, 
               credits, license, badges, features, contributing, tests, github, email } = templateData;
  
  return `
-# Readme Title: 
-${title}
+# ${title}
 
 ## Description: 
 ${description}

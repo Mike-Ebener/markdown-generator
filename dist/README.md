@@ -1,39 +1,38 @@
 
-# Readme Title: 
-golf
+# Coding Quiz
 
 ## Description: 
-golf now
+This is a gamified online quiz built with html, css and javascript.  This WIP quiz offers the user the ability to answer software development related questions within a given time. Wrong answers count as 10 seconds against the timer.  Scores are logged based on how much time was left at completion.  
 
 ## Table of Contents (Optional): 
-golf galaxy
+No table of contents
 
 ## Installation: 
-driver
+Download from Github and open locally in VScode
 
 ## Usage: 
-titleist
+Work through the given list of questions.  You are scored based on your ability to correctly answer and by the speed of answering. 
 
 ## Credits: 
-tsi2
+N/A
 
 ## License: 
-tsi2 
+N/A
 
 ## Badges: 
-hybrid
+N/A
 
 ## Features: 
-driver
+Questions, Prompts, Validations, Timers
 
 ## Contributing: 
-iron
+N/A
 
 ## Tests: 
-putter
+N/A
 
 ## Questions?
-Checkout my GitHub profile here: https://github.com/wedge
-If you have any questions kindly reach out to me at ball
+Checkout my GitHub profile here: https://github.com/mike-ebener
+If you have any questions kindly reach out to me at mebener44@yahoo.com
 
     
